@@ -49,6 +49,7 @@ grep -Fq 'href="#main-content"' index.html || fail 'A skip link is required.'
 grep -Eq 'alt="[^"].*"' index.html || fail 'Descriptive image alternatives are required.'
 grep -Fq 'https://github.com/anvilfilbert/MacPad/releases/latest' index.html || fail 'MacPad release link is missing.'
 grep -Fq 'https://github.com/anvilfilbert/MacPad-Mobile#install-locally-with-xcode' index.html || fail 'MacPad Mobile installation link is missing.'
+grep -Fq 'Plain text. Ultra fast. No bloat.' index.html || fail 'Approved MacPad family slogan is missing.'
 grep -Fq ':focus-visible' styles.css || fail 'Visible keyboard focus styling is required.'
 grep -Fq 'prefers-reduced-motion' styles.css || fail 'Reduced-motion styling is required.'
 
